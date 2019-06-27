@@ -14,11 +14,12 @@ div{
 }
 body{
   background-color: rgb(30, 44, 54);
+  margin:0;
+  padding:0;
 }
-.mainShadow{
-  box-shadow: 0 0.5px 10px 0px #000000;
+.fontPalatino{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
 }
-
 .firstBg{
   background: url('../images/firstbg.jpg') no-repeat center center;
   background-size: cover;
@@ -37,7 +38,6 @@ body{
   background-color: #273947;
 }
 .mobTitle{
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   color:rgb(245, 239, 239);
 }
 .myselfBox{
