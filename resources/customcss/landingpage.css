@@ -19,6 +19,9 @@ body{
   box-shadow: 0 0.5px 10px 0px #000000;
 }
 
+.fontPalatino{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+}
 .firstBg{
   background: url('../images/firstbg.jpg') no-repeat center center;
   background-size: cover;
