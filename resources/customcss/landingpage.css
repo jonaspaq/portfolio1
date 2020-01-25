@@ -1,0 +1,232 @@
+.out {border: 10px solid rgb(238, 231, 231);border-radius: 50%;border-bottom: 10px solid rgb(30, 44, 54);width: 120px;height: 120px;animation: spin 1.5s ease-in-out infinite;
+}
+.in {border: 10px solid rgb(238, 231, 231);border-radius: 50%;border-top: 10px solid rgb(30, 44, 54);border-bottom: 10px solid rgb(30, 44, 54);width: 120px;height: 120px;animation: spinrev 1.5s ease-in-out infinite;
+}
+.out2 {border: 10px solid rgb(238, 231, 231);border-radius: 50%;border-top: 10px solid rgb(30, 44, 54);width: 120px;height: 120px;animation: spin 1.5s ease-in-out infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }100% { transform: rotate(360deg); }}
+@keyframes spinrev {
+  0% { transform: rotate(0deg); }100% { transform: rotate(-360deg); }
+}
+div{
+  display: block;
+}
+body{
+  background-color: rgb(30, 44, 54);
+}
+.mainShadow{
+  box-shadow: 0 0.5px 10px 0px #000000;
+}
+
+.firstBg{
+  background: url('../images/firstbg.jpg') no-repeat center center;
+  background-size: cover;
+  height:auto;
+}
+.secondBg{
+  background: url('../images/me2.jpg') no-repeat center center;
+  background-size: cover;
+  height:300px;
+}
+.thirdBg{
+  background-color: #1e2c36;
+  height:auto;
+}
+.mobTitleBox{
+  background-color: #273947;
+}
+.mobTitle{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color:rgb(245, 239, 239);
+}
+.myselfBox{
+  width:100%;
+}
+.myselfImage{
+  height:100%;
+  width:100%;
+}
+.othBtn{
+  width: 200px;
+  background-color:rgb(30, 44, 54,0.2);
+  border: 2px solid rgba(75, 75, 75, 0.7);
+  box-shadow: 0 0.5px 10px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0px;
+  color: rgb(253, 251, 251);
+}
+
+.first,.second,.third{
+  opacity:0;
+}
+.socMedia{
+  background-color: #1e2c36;
+}
+.othBtn:focus{
+  background-color:rgba(45, 62, 75, 0.9);
+  border-color: rgb(253, 251, 251, 0);
+  outline-color: rgb(253, 251, 251, 0);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+/* If screen is desktop size */ /* Desktop CSS */
+@media (min-width: 1000px) { 
+  .firstBg{
+    min-height: 100vh;
+  }
+  .myselfBox{
+    min-height: 65vh;
+  }
+  .mycard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.2s;
+    min-width: 300px;
+    position: absolute;
+    left: 26%;
+    margin-left: -70px;
+    top: 30%;
+    margin-top: -120px;
+  }
+  .mycard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+    width: 55%;
+    z-index:2;
+  }
+  .mainCard{
+    z-index: 1;
+    width: 50%;
+  }
+  .othCard1{
+    z-index: 0;
+    -ms-transform: rotate(-10deg); /* IE 9  */
+    -webkit-transform: rotate(-10deg); /* Safari  */
+    transform: rotate(-10deg);
+    width: 40%;
+    left:100px;
+  }
+  .othCard2{
+    z-index: 0;
+    -ms-transform: rotate(10deg); /* IE 9 */
+    -webkit-transform: rotate(10deg); /* Safari */
+    transform: rotate(10deg);
+    width: 40%;
+    left:290px;
+  }
+
+  .othBtn:hover{
+    padding:13px;
+    background-color:rgba(45, 62, 75, 0.9);
+    border-color: rgb(253, 251, 251, 0);
+    outline-color: rgb(253, 251, 251);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
+
+
+
+
+
+/* If screen is 1920 x 1080 */
+@media (min-width: 1900px) { 
+  .othCard2{
+    left:440px;
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #DAD5D5; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #152734; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #254155; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInLeft {
+  -webkit-animation-name: slideInLeft;
+  animation-name: slideInLeft;
+  animation-duration: 1s;
+  opacity:1;
+}
+
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  opacity:1;
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  opacity:1;
+}
+
+
+
+
